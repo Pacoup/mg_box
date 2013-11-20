@@ -1,5 +1,5 @@
 /*
-Mg Box 1.0.0.0
+Mg Box 1.0.0.1
 https://github.com/Pacoup/mg_box
 
    Copyright 2013 Etienne Levesque Guitard
@@ -25,7 +25,7 @@ if (!document.getElementsByClassName)
 	document.getElementsByClassName = function(className)
 	{
 		return this.querySelectorAll("." + className);
-	}
+	};
 	Element.prototype.getElementsByClassName = document.getElementsByClassName;
 }
 
@@ -51,7 +51,7 @@ mg.evaluate_wrap = function()
 		}
 		
 	}
-}
+};
 
 if (!window.jQuery)
 {
@@ -70,7 +70,7 @@ if (!window.jQuery)
 				window.addEventListener('resize', mg.evaluate_wrap, false);
 			}
 		}
-	}
+	};
 }
 else
 {
